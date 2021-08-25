@@ -1,0 +1,57 @@
+name: carmap
+description: An App to get details about the nearby parking lots of Singapore.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^0.5.25+2
+  google_maps_webservice: ^0.0.16
+  http: ^0.12.0+2
+  csv: ^4.0.3
+  dio: ^2.1.3
+  url_launcher: ^5.4.2
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+     - assets/hdb-carpark-information.csv
+     - assets/map_style.txt
+     - assets/app_logo.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: assets/Pacifico-Regular.ttf
+
+    - family: Source Sans Pro
+      fonts:
+        - asset: assets/SourceSansPro-Regular.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
